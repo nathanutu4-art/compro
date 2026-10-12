@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbitara — Sewa &amp; Jual Starlink Indonesia</title>
+<meta name="description" content="Orbitara: sewa dan beli perangkat internet satelit Starlink di Indonesia. Internet cepat dari langit, kapan saja.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══════════ PRELOADER ══════════ -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <div class="pre-brand">ORBITARA</div>
+    <div class="pre-sub">Internet Satelit Indonesia</div>
+    <div class="pre-count"><span id="pre-num">0</span>%</div>
+    <div class="pre-bar"><span id="pre-fill"></span></div>
+  </div>
+</div>
+
+<!-- ══════════ FIXED FX LAYERS ══════════ -->
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"><span id="progress-fill"></span></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <a href="#beranda" class="nav-brand magnetic" data-hover>ORBITARA<sup>®</sup></a>
+  <nav class="nav-links">
+    <a href="#tentang" data-hover>Tentang</a>
+    <a href="#produk" data-hover>Produk</a>
+    <a href="#layanan" data-hover>Layanan</a>
+    <a href="#faq" data-hover>FAQ</a>
+  </nav>
+  <a href="#kontak" class="btn btn-sm magnetic" data-hover>Pesan Sekarang</a>
+  <button class="nav-burger" id="burger" aria-label="Buka menu"><span></span><span></span></button>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#tentang">Tentang</a>
+  <a href="#produk">Produk</a>
+  <a href="#layanan">Layanan</a>
+  <a href="#faq">FAQ</a>
+  <a href="#kontak" class="btn">Pesan Sekarang</a>
+</div>
+
+<main>
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="beranda">
+  <div class="hero-inner">
+    <p class="eyebrow reveal">Internet Satelit Starlink — Indonesia</p>
+    <h1 class="hero-title">
+      <span class="line reveal"><span>INTERNET</span></span>
+      <span class="line reveal"><span>CEPAT <em>DARI</em></span></span>
+      <span class="line reveal"><span>LANGIT<span class="accent">.</span></span></span>
+    </h1>
+    <p class="hero-sub reveal">Sewa harian hingga bulanan, atau beli perangkat Starlink milikmu sendiri. Koneksi stabil bahkan di pelosok — tanpa kabel, tanpa ribet.</p>
+    <div class="hero-cta reveal">
+      <a href="#produk" class="btn btn-lg magnetic" data-hover>Lihat Paket Sewa</a>
+      <a href="#kontak" class="btn btn-lg btn-ghost magnetic" data-hover>Hubungi Kami</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat"><strong>100+</strong><span>Mbps kecepatan</span></div>
+      <div class="stat"><strong>38</strong><span>provinsi terjangkau</span></div>
+      <div class="stat"><strong>24/7</strong><span>dukungan teknis</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint" aria-hidden="true"><span></span>scroll</div>
+</section>
+
+<!-- ══════════ MARQUEE ══════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>INTERNET SATELIT&ensp;✦&ensp;SEWA&ensp;✦&ensp;JUAL&ensp;✦&ensp;STARLINK&ensp;✦&ensp;INTERNET SATELIT&ensp;✦&ensp;SEWA&ensp;✦&ensp;JUAL&ensp;✦&ensp;STARLINK&ensp;✦&ensp;</span>
+    <span>INTERNET SATELIT&ensp;✦&ensp;SEWA&ensp;✦&ensp;JUAL&ensp;✦&ensp;STARLINK&ensp;✦&ensp;INTERNET SATELIT&ensp;✦&ensp;SEWA&ensp;✦&ensp;JUAL&ensp;✦&ensp;STARLINK&ensp;✦&ensp;</span>
+  </div>
+</div>
+
+<!-- ══════════ 01 TENTANG ══════════ -->
+<section class="section" id="tentang">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title">Tentang<br>Kami</h2>
+    </div>
+    <div class="about-grid">
+      <p class="lead reveal">Orbitara adalah penyedia layanan sewa dan penjualan perangkat internet satelit Starlink di Indonesia. Kami membantu individu, komunitas, dan perusahaan mendapatkan koneksi internet cepat di mana pun — dari kota besar hingga daerah terpencil yang tak terjangkau kabel.</p>
+      <div class="about-cards">
+        <div class="card tilt reveal" data-hover>
+          <h3>Misi</h3>
+          <p>Membawa internet cepat ke setiap sudut Indonesia, tanpa batas infrastruktur darat.</p>
+        </div>
+        <div class="card tilt reveal" data-hover>
+          <h3>Kenapa Kami</h3>
+          <p>Perangkat resmi, instalasi mudah, dan tim support yang siap membantu kapan saja.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 02 PRODUK ══════════ -->
+<section class="section" id="produk">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">Produk<br>&amp; Paket</h2>
+    </div>
+    <div class="tabs reveal" role="tablist">
+      <button class="tab active magnetic" data-tab="sewa" role="tab" data-hover>Sewa</button>
+      <button class="tab magnetic" data-tab="beli" role="tab" data-hover>Beli</button>
+    </div>
+    <p class="price-note reveal">Semua harga di bawah ini adalah <strong>harga contoh</strong> — hubungi kami untuk penawaran resmi.</p>
+
+    <div class="tab-panel active" id="panel-sewa">
+      <div class="price-grid">
+        <div class="price-card tilt reveal" data-hover>
+          <h3>Sewa Harian</h3>
+          <p class="price">Rp150rb<span>/hari</span></p>
+          <ul><li>Acara / event 1 hari</li><li>Internet cadangan darurat</li><li>Termasuk instalasi</li></ul>
+          <a href="#kontak" class="btn magnetic" data-hover>Pilih Paket</a>
+        </div>
+        <div class="price-card tilt reveal featured" data-hover>
+          <span class="badge">Terpopuler</span>
+          <h3>Sewa Bulanan</h3>
+          <p class="price">Rp2,5jt<span>/bulan</span></p>
+          <ul><li>Proyek / site remote</li><li>Gratis antar-jemput*</li><li>Prioritas support 24/7</li></ul>
+          <a href="#kontak" class="btn magnetic" data-hover>Pilih Paket</a>
+        </div>
+        <div class="price-card tilt reveal" data-hover>
+          <h3>Sewa Mingguan</h3>
+          <p class="price">Rp750rb<span>/minggu</span></p>
+          <ul><li>Liburan / workation</li><li>Cocok untuk villa &amp; resort</li><li>Termasuk instalasi</li></ul>
+          <a href="#kontak" class="btn magnetic" data-hover>Pilih Paket</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="panel-beli">
+      <div class="price-grid">
+        <div class="price-card tilt reveal" data-hover>
+          <h3>Starlink Mini</h3>
+          <p class="price">Rp4,5jt<span>/unit</span></p>
+          <ul><li>Portabel &amp; ringkas</li><li>Cocok untuk traveler</li><li>Garansi resmi 1 tahun</li></ul>
+          <a href="#kontak" class="btn magnetic" data-hover>Beli Sekarang</a>
+        </div>
+        <div class="price-card tilt reveal featured" data-hover>
+          <span class="badge">Terlaris</span>
+          <h3>Starlink Standard Kit</h3>
+          <p class="price">Rp7,5jt<span>/unit</span></p>
+          <ul><li>Untuk rumah &amp; kantor</li><li>Kecepatan hingga 200+ Mbps</li><li>Garansi resmi 1 tahun</li></ul>
+          <a href="#kontak" class="btn magnetic" data-hover>Beli Sekarang</a>
+        </div>
+        <div class="price-card tilt reveal" data-hover>
+          <h3>Aksesori</h3>
+          <p class="price">Mulai Rp350rb</p>
+          <ul><li>Mounting &amp; tiang</li><li>Kabel ekstensi</li><li>Power bank kit</li></ul>
+          <a href="#kontak" class="btn magnetic" data-hover>Lihat Aksesori</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 03 LAYANAN ══════════ -->
+<section class="section" id="layanan">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Area<br>Layanan</h2>
+    </div>
+    <p class="lead reveal">Selama langit terlihat, Starlink bekerja. Kami melayani pengiriman dan instalasi ke seluruh Indonesia, dengan fokus utama di wilayah berikut:</p>
+    <div class="chips reveal">
+      <span class="chip" data-hover>Jabodetabek</span>
+      <span class="chip" data-hover>Kendari</span>
+      <span class="chip" data-hover>Sulawesi Tenggara</span>
+      <span class="chip" data-hover>Makassar</span>
+      <span class="chip" data-hover>Surabaya</span>
+      <span class="chip" data-hover>Medan</span>
+      <span class="chip" data-hover>Balikpapan</span>
+      <span class="chip" data-hover>Seluruh Indonesia*</span>
+    </div>
+    <p class="fine reveal">*Syarat dan ketentuan pengiriman berlaku untuk area di luar kota utama.</p>
+  </div>
+</section>
+
+<!-- ══════════ MARQUEE 2 ══════════ -->
+<div class="marquee marquee-rev" aria-hidden="true">
+  <div class="marquee-track">
+    <span>TANPA KABEL&ensp;✦&ensp;ANTI LEMOT&ensp;✦&ensp;PASANG MUDAH&ensp;✦&ensp;TANPA KABEL&ensp;✦&ensp;ANTI LEMOT&ensp;✦&ensp;PASANG MUDAH&ensp;✦&ensp;</span>
+    <span>TANPA KABEL&ensp;✦&ensp;ANTI LEMOT&ensp;✦&ensp;PASANG MUDAH&ensp;✦&ensp;TANPA KABEL&ensp;✦&ensp;ANTI LEMOT&ensp;✦&ensp;PASANG MUDAH&ensp;✦&ensp;</span>
+  </div>
+</div>
+
+<!-- ══════════ 04 CARA PESAN ══════════ -->
+<section class="section" id="cara-pesan">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title">Cara<br>Memesan</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal" data-hover><span class="step-num">1</span><h3>Pilih Paket</h3><p>Tentukan kebutuhanmu: sewa harian, mingguan, bulanan, atau beli perangkat.</p></div>
+      <div class="step reveal" data-hover><span class="step-num">2</span><h3>Hubungi Kami</h3><p>Chat WhatsApp, konfirmasi ketersediaan dan jadwal pengiriman.</p></div>
+      <div class="step reveal" data-hover><span class="step-num">3</span><h3>Pembayaran</h3><p>Transfer bank / e-wallet. Perangkat dikirim atau diantar ke lokasimu.</p></div>
+      <div class="step reveal" data-hover><span class="step-num">4</span><h3>Aktif &amp; Online</h3><p>Pasang dish menghadap langit, sambungkan, dan internet langsung jalan.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 05 TESTIMONI ══════════ -->
+<section class="section" id="testimoni">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title">Kata<br>Mereka</h2>
+    </div>
+    <p class="fine reveal">Testimoni di bawah ini adalah contoh — akan diganti dengan ulasan pelanggan asli.</p>
+    <div class="quotes">
+      <blockquote class="quote tilt reveal" data-hover>
+        <p>"Sewa untuk proyek tambang 3 bulan di pedalaman. Internet stabil terus, tim support responsif banget."</p>
+        <cite>— Andi, Site Manager (contoh)</cite>
+      </blockquote>
+      <blockquote class="quote tilt reveal" data-hover>
+        <p>"Villa kami di daerah bukit akhirnya punya WiFi kencang. Tamu-tamu pada senang, booking naik."</p>
+        <cite>— Sarah, Pemilik Villa (contoh)</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 06 FAQ ══════════ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">06</span>
+      <h2 class="sec-title">Pertanyaan<br>Umum</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq reveal">
+        <button class="faq-q" data-hover>Apakah Starlink butuh kabel telepon / fiber? <span class="faq-x">+</span></button>
+        <div class="faq-a"><p>Tidak. Starlink menerima sinyal langsung dari satelit — cukup colok listrik dan arahkan dish ke langit terbuka.</p></div>
+      </div>
+      <div class="faq reveal">
+        <button class="faq-q" data-hover>Berapa kecepatan internetnya? <span class="faq-x">+</span></button>
+        <div class="faq-a"><p>Umumnya 50–200+ Mbps tergantung lokasi dan kondisi langit. Cukup untuk streaming, video call, dan kerja remote.</p></div>
+      </div>
+      <div class="faq reveal">
+        <button class="faq-q" data-hover>Bagaimana jika perangkat sewa rusak? <span class="faq-x">+</span></button>
+        <div class="faq-a"><p>Semua paket sewa mencakup garansi penggantian unit selama masa sewa untuk kerusakan non-disengaja.</p></div>
+      </div>
+      <div class="faq reveal">
+        <button class="faq-q" data-hover>Apakah ada biaya aktivasi / langganan? <span class="faq-x">+</span></button>
+        <div class="faq-a"><p>Paket sewa sudah termasuk biaya langganan selama masa sewa. Untuk pembelian unit, kami bantu aktivasi paket langganan resmi.</p></div>
+      </div>
+      <div class="faq reveal">
+        <button class="faq-q" data-hover>Apakah bisa dipasang di kapal / kendaraan? <span class="faq-x">+</span></button>
+        <div class="faq-a"><p>Bisa, dengan paket mobilitas tertentu. Hubungi kami untuk rekomendasi perangkat yang sesuai.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ KONTAK ══════════ -->
+<section class="section kontak" id="kontak">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">07</span>
+      <h2 class="sec-title">Siap<br>Terhubung?</h2>
+    </div>
+    <p class="lead reveal">Ceritakan kebutuhanmu — sewa untuk event, proyek remote, atau beli untuk rumah. Kami balas cepat.</p>
+    <div class="reveal">
+      <button class="btn btn-lg btn-wa magnetic" id="wa-btn" data-hover>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.6-.2.4-.9 2.1-.9 4.4 0 2.3 1.7 4.6 2 4.9.3.3 3.4 5.4 8.3 7.3.6.2 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+        Chat WhatsApp
+      </button>
+      <p class="wa-note">Nomor WhatsApp sementara — akan diganti dengan nomor resmi sebelum publikasi.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">ORBITARA<sup>®</sup><p>Internet satelit untuk Indonesia.</p></div>
+    <nav class="foot-links">
+      <a href="#tentang" data-hover>Tentang</a>
+      <a href="#produk" data-hover>Produk</a>
+      <a href="#faq" data-hover>FAQ</a>
+      <a href="#kontak" data-hover>Kontak</a>
+    </nav>
+    <p class="foot-copy">© 2026 Orbitara. Seluruh hak cipta dilindungi. <span class="fine-inline">(Nama brand &amp; konten masih placeholder)</span></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
